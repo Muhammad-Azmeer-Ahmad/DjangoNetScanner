@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulnerability Scanner</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1e1e2e;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #2d2d3e;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        .btn-scan {
+            background-color: #007bff;
+            border: none;
+            transition: 0.3s;
+        }
+        .btn-scan:hover {
+            background-color: #0056b3;
+        }
+        textarea {
+            width: 100%;
+            height: 250px;
+            background: #1a1a2e;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h2 class="mt-3">🔍 Nmap Vulnerability Scanner</h2>
+        <p>Enter a target IP or domain to scan for open ports.</p>
+
+        <form method="POST" action="{% url 'scan' %}">
+            {% csrf_token %}
+            <div class="mb-3">
+                <input type="text" name="target" class="form-control" placeholder="Enter target (e.g., 192.168.1.1)" required>
+            </div>
+            <button type="submit" class="btn btn-scan w-100">Start Scan</button>
+        </form>
+
+        {% if error %}
+            <div class="alert alert-danger mt-3">{{ error }}</div>
+        {% endif %}
+
+        {% if scan_data %}
+            <h4 class="mt-4">Scan Results:</h4>
+            <textarea readonly>{{ scan_data }}</textarea>
+        {% endif %}
+
+        <div class="footer">© 2025 - azmeerbaloch29@gmail.com</div>
+    </div>
+</body>
+</html>
