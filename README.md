@@ -1,6 +1,6 @@
 # Nmap Django Web Scanner
 
-A **web-based Nmap vulnerability scanner built with Django**, enabling users to scan and analyze open ports and services on any target system. It offers a simple yet powerful interface to perform network scans through the browser.
+🚀A **🌐web-based Nmap vulnerability scanner built with Django**, enabling users to scan and analyze open ports  🔓 and services on any target system. It offers a simple yet powerful 🖥️interface to perform network scans through the browser.🚀
 
 ---
 # 📌 Note
