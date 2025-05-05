@@ -22,37 +22,37 @@ Feel free to clone, expand, deploy, or adapt it as needed for your own learning 
 
 To get started with this project locally:
 
-### 1. Clone the repository
+### 📥Clone the repository:
 ```bash
 git clone https://github.com/muhammadazmeerahmad/nmap-django-scanner.git
 cd nmap-django-scanner
 ```
 
-## Create Virtual Environment
+## 🧪Create Virtual Environment:
 ```bash
 python -m venv venv
 ```
-### Activate it
--**Windows**:
+### ⚙️ Activate it:
+-**🪟Windows**:
 ```bash 
 venv\Scripts\activate
 ```
--**Linux/Mac**:
+-**🐧Linux/Mac**:
 ```bash
 source venv/bin/activate
 ```
 
-## Install Dependencies:
+## 📦 Install Dependencies:
 ```bash
 pip install -r requirements.txt
 ``` 
 
-## Run Server:
+## 🟢 Run Server:
 ```bash
 python manage.py runserver
 ```
 Visit the web application in your browser:
-http://127.0.0.1:8000
+🌐 http://127.0.0.1:8000
 
 
 ### 🗂️ Project Structure:
@@ -81,11 +81,11 @@ nmap-django-scanner/
 ```
 
 ### 🛠️ Technologies Used:
-- **Python**
-- **Django**
-- **Nmap via python-nmap package**
+- **🐍Python**
+- **🌐Django**
+- **🕵️‍♂️Nmap via python-nmap package**
 
 ### ⚠️ Requirements:
-- **You must have Nmap installed on your system**
-Download it here: https://nmap.org/download.html
+- **⚙️You must have Nmap installed on your system**
+📥Download it here: https://nmap.org/download.html
 
