@@ -3,10 +3,20 @@
 🚀A **🌐web-based Nmap vulnerability scanner built with Django**, enabling users to scan and analyze open ports  🔓 and services on any target system. It offers a simple yet powerful 🖥️interface to perform network scans through the browser.🚀
 
 ---
-# 📌 Note
-This project is currently undeployed and intended for educational use, running locally.
-Feel free to clone, expand, deploy, or adapt it as needed for your own learning or development goals.
+## ⚠️ Important Note
 
+This project is **currently not deployed online** 🌐 and is meant **only for educational purposes** 📘.  
+It is designed to be **run locally on your own machine** 💻.
+
+🛠️ **Feel free to:**
+- 📥 Clone the repository  
+- 🧑‍💻 Explore and modify the code  
+- 🚀 Deploy it on your own server if you wish  
+- 📈 Use it as a base for your learning or development journey
+
+✅ Ideal for students, developers, and cybersecurity learners!
+
+________________________________________________________________________________
 
 
 ## 🚀 Features
