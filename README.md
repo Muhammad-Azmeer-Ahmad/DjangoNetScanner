@@ -1,86 +1,91 @@
 # Nmap Django Web Scanner
 
-## Overview
+A **web-based Nmap vulnerability scanner built with Django**, enabling users to scan and analyze open ports and services on any target system. It offers a simple yet powerful interface to perform network scans through the browser.
 
-**Nmap Django Web Scanner** is a web-based application built using Django and Nmap to perform network scanning for open ports on a given target. This project is designed to allow users to scan IP addresses or hostnames for open ports and get a detailed report on the results directly through a web interface.
+---
+# 📌 Note
+This project is currently undeployed and intended for educational use, running locally.
+Feel free to clone, expand, deploy, or adapt it as needed for your own learning or development goals.
 
-## Features
 
-- **Network Scanning**: Perform Nmap scans on remote targets.
-- **Port Detection**: Detect open ports and services running on the target machine.
-- **Django Interface**: A user-friendly web interface for entering target IP addresses or hostnames.
-- **Real-Time Feedback**: View live results for scanned targets.
 
-## Installation
+## 🚀 Features
 
-Follow these steps to set up the project locally:
+- **Network Scanning**: Perform real-time Nmap scans on IP addresses or domain names.
+- **Port & Service Detection**: Detect open ports and identify services running on the target.
+- **User-Friendly Interface**: Enter target information and view results in an intuitive web layout.
+- **Customizable & Extendable**: Designed to be a starter project for learning and further development.
+
+---
+
+## 📦 Clone & Run Locally
+
+To get started with this project locally:
 
 ### 1. Clone the repository
-
 ```bash
 git clone https://github.com/muhammadazmeerahmad/nmap-django-scanner.git
-
-# Nmap Django Scanner - Project Setup Instructions
-
-This guide explains how to set up and run this project on your local machine after cloning it from GitHub.
-
-## Clone the Project from GitHub
-git clone https://github.com/muhammadazmeerahmad/nmap-django-scanner.git
-
 cd nmap-django-scanner
+```
 
 ## Create Virtual Environment
+```bash
 python -m venv venv
-
-### Activate Virtual Environment
-- For Windows:
+```
+### Activate it
+-**Windows**:
+```bash 
 venv\Scripts\activate
-
-- For Linux/Mac:
+```
+-**Linux/Mac**:
+```bash
 source venv/bin/activate
+```
 
-## Install All Dependencies
+## Install Dependencies:
+```bash
 pip install -r requirements.txt
+``` 
 
-## Run Django Server
+## Run Server:
+```bash
 python manage.py runserver
+```
+Visit the web application in your browser:
+http://127.0.0.1:8000
 
-## Access Web Application
-Open your browser and go to:
-http://127.0.0.1:8000/scan/
 
-## Project Structure
+### 🗂️ Project Structure:
+```bash
 nmap-django-scanner/
 │
-├── manage.py
-├── requirements.txt
-├── setup/
-│   └── setup_instructions.txt
+├── manage.py                 # Django management script
+├── requirements.txt          # Python package dependencies
 │
-├── vulnscanner/
+├── setup/
+│   └── setup_instructions.txt  # Optional setup notes
+│
+├── vulnscanner/              # Main Django project settings
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
 │
-├── scanner/
+├── scanner/                  # App handling scan logic
 │   ├── templates/
-│   │   └── index.html
-│   ├── views.py
-│   └── urls.py
+│   │   └── index.html        # Frontend HTML template
+│   ├── views.py              # Scan logic (Nmap calls, rendering)
+│   └── urls.py               # Routes for the scanner app
 │
-├── db.sqlite3
-└── venv/
+├── db.sqlite3                # Default Django database (for local use)
+└── venv/                     # Python virtual environment
+```
 
-## Technologies Used
-- Python
-- Django
-- Nmap (python-nmap library)
+### 🛠️ Technologies Used:
+- **Python**
+- **Django**
+- **Nmap via python-nmap package**
 
-## Note:
-- Before running the project make sure Nmap is installed on your machine.
-- Install it from → https://nmap.org/download.html
+### ⚠️ Requirements:
+- **You must have Nmap installed on your system**
+Download it here: https://nmap.org/download.html
 
-## Author
-Muhammad Azmeer Ahmad
-
-GitHub Profile: https://github.com/muhammadazmeerahmad
