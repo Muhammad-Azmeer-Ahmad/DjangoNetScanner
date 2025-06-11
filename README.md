@@ -1,4 +1,4 @@
-# Nmap Django Web Scanner
+# Django Net Scanner
 
 🚀A **🌐web-based Nmap vulnerability scanner built with Django**, enabling users to scan and analyze open ports  🔓 and services on any target system. It offers a simple yet powerful 🖥️interface to perform network scans through the browser.🚀
 
@@ -34,8 +34,8 @@ To get started with this project locally:
 
 ### 📥Clone the repository:
 ```bash
-git clone https://github.com/muhammadazmeerahmad/nmap-django-scanner.git
-cd nmap-django-scanner
+git clone https://github.com/muhammadazmeerahmad/DjnagoNetScanner
+cd DjangoNetScanner
 ```
 
 ## 🧪Create Virtual Environment:
@@ -67,7 +67,7 @@ Visit the web application in your browser:
 
 ### 🗂️ Project Structure:
 ```bash
-nmap-django-scanner/
+DjangoNetScanner/
 │
 ├── manage.py                 # Django management script
 ├── requirements.txt          # Python package dependencies
