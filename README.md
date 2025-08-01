@@ -35,7 +35,7 @@ To get started with this project locally:
 ### 📥Clone the repository:
 ```bash
 git clone https://github.com/muhammadazmeerahmad/DjnagoNetScanner
-cd DjangoNetScanner
+cd vulnscanner
 ```
 
 ## 🧪Create Virtual Environment:
